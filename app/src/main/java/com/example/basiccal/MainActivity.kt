@@ -156,6 +156,10 @@ class MainActivity : AppCompatActivity() {
 
         if(tvData!="")
         {
+            if('+'==tvData.last() || '-'==tvData.last() || '*'==tvData.last() || '/'==tvData.last())
+            {
+                lastNumeric = true
+            }
             tvInput?.text = tvData.substring(0, tvData.length - 1)
         }
 
