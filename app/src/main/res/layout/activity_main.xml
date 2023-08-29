@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/tvHistory"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:background="#8ecae6"
+        android:gravity="end|bottom"
+        android:padding="12dp"
+        android:textColor="#373232"
+        android:textSize="48sp"
+
+        />
+
+    <TextView
+        android:id="@+id/tvInput"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:background="#8ecae6"
+        android:gravity="end|bottom"
+        android:padding="12dp"
+        android:textColor="#373232"
+        android:textSize="48sp"
+
+        />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:background="#023047"
+        android:padding="15dp"
+        android:layout_marginHorizontal="4dp"
+        >
+
+        <Button
+            android:id="@+id/btnSeven"
+            android:layout_margin="3dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="20dp"
+            android:layout_weight="1"
+
+            android:onClick="onDigit"
+            android:text="@string/_7"
+
+            />
+
+        <Button
+            android:id="@+id/btnEight"
+            android:layout_margin="3dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:onClick="onDigit"
+            android:text="@string/_8"
+
+            />
+
+        <Button
+            android:id="@+id/btnNine"
+            android:layout_margin="3dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:onClick="onDigit"
+            android:text="@string/_9"
+
+            />
+
+        <Button
+            android:id="@+id/btnDivide"
+            android:layout_margin="3dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:onClick="onOperator"
+            android:backgroundTint="#219ebc"
+            android:text="@string/divide"
+
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:background="#023047"
+        android:padding="15dp"
+        android:layout_marginHorizontal="4dp"
+        >
+
+        <Button
+            android:id="@+id/btnFour"
+            android:layout_margin="2dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:onClick="onDigit"
+            android:text="@string/_4"
+
+            tools:ignore="UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/btnFive"
+            android:layout_margin="2dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:onClick="onDigit"
+            android:text="@string/_5"
+
+            tools:ignore="UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/btnSix"
+            android:layout_margin="2dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onDigit"
+            android:text="@string/_6"
+            android:textSize="20dp"
+            tools:ignore="UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/btnMultiply"
+            android:layout_margin="2dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onOperator"
+            android:textSize="20dp"
+            android:text="@string/multiply"
+            android:backgroundTint="#219ebc"
+
+            tools:ignore="UsingOnClickInXml" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:background="#023047"
+        android:padding="15dp"
+        android:layout_marginHorizontal="4dp"
+        >
+
+        <Button
+            android:id="@+id/btnOne"
+            android:layout_margin="2dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:onClick="onDigit"
+            android:text="@string/_1"
+
+            tools:ignore="UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/btnTwo"
+            android:layout_margin="2dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onDigit"
+            android:textSize="20dp"
+            android:text="@string/_2"
+
+            tools:ignore="UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/btnThree"
+            android:layout_margin="2dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onDigit"
+            android:text="@string/_3"
+            android:textSize="20dp"
+
+            tools:ignore="UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/btnMinus"
+            android:layout_margin="2dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:onClick="onOperator"
+            android:text="@string/minus"
+            android:backgroundTint="#219ebc"
+
+            tools:ignore="UsingOnClickInXml" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:background="#023047"
+        android:padding="15dp"
+        android:layout_marginHorizontal="4dp"
+        >
+
+        <Button
+            android:id="@+id/btnZero"
+            android:layout_margin="2dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:onClick="onDigit"
+            android:text="@string/_0"
+
+            tools:ignore="UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/btnDot"
+            android:layout_margin="2dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:onClick="onDecimalPoint"
+            android:text="@string/dot"
+
+            tools:ignore="UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/btnClr"
+            android:layout_margin="2dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClear"
+            android:text="@string/clr"
+
+            tools:ignore="UsingOnClickInXml" />
+
+
+        <Button
+            android:id="@+id/btnPlus"
+            android:layout_margin="2dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onOperator"
+            android:text="@string/plus"
+            android:textSize="20dp"
+            android:backgroundTint="#219ebc"
+
+            tools:ignore="UsingOnClickInXml" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:background="#023047"
+        android:padding="15dp"
+        android:layout_marginHorizontal="2dp"
+        >
+
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_margin="2dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onBack"
+            android:text="@string/back"
+            android:textSize="20dp"
+            android:backgroundTint="#bc6c25"
+
+            tools:ignore="UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/btnHistory"
+            android:layout_margin="2dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onHistory"
+            android:text="@string/h"
+            android:textSize="20dp"
+            android:backgroundTint="#bc6c25"
+
+            tools:ignore="UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/btnEqual"
+            android:layout_margin="2dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:onClick="onEqual"
+            android:text="@string/equal"
+            android:textSize="20dp"
+            android:backgroundTint="#bc6c25"
+
+            tools:ignore="UsingOnClickInXml" />
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
