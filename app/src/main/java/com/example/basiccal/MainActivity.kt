@@ -13,10 +13,10 @@ class MainActivity : AppCompatActivity() {
     private var tvInput: TextView? = null
     private var tvHistory: TextView? = null
 
-    var lastNumeric: Boolean = false
-    var lastDot: Boolean = false
+    private var lastNumeric: Boolean = false
+    private var lastDot: Boolean = false
 
-    var history = mutableListOf<String>()
+    private var history = mutableListOf<String>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
