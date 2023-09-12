@@ -38,6 +38,7 @@ class MainActivity : AppCompatActivity() {
 
     fun onClear(view: View) {
         tvInput?.text = ""
+        tvHistory?.text=""
     }
 
     fun onDecimalPoint(view: View) {
