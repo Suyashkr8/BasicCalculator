@@ -190,7 +190,18 @@ class MainActivity : AppCompatActivity() {
     private fun isOperatorAdded( value: String ) : Boolean
     {
 
-        return if(value.startsWith("-")) {
+        return if(value.startsWith("-") ) {
+            val wthoutFirstCharacter = value.substring(startIndex = 1)
+
+            val flag = wthoutFirstCharacter.contains("+")
+                    || wthoutFirstCharacter.contains("-")
+                    || wthoutFirstCharacter.contains("*")
+                    || wthoutFirstCharacter.contains("/")
+
+            if(flag)
+            {
+                return true
+            }
             false
         }
         else
