@@ -97,7 +97,7 @@ class MainActivity : AppCompatActivity() {
                     val splitValue = tvValue.split("+")
 
                     var one=splitValue[0]
-                    var two=splitValue[1]
+                    val two=splitValue[1]
 
                     if(prefix.isNotEmpty())
                     {
@@ -131,7 +131,7 @@ class MainActivity : AppCompatActivity() {
                     val splitValue = tvValue.split("/")
 
                     var one=splitValue[0]
-                    var two=splitValue[1]
+                    val two=splitValue[1]
 
                     if(prefix.isNotEmpty())
                     {
